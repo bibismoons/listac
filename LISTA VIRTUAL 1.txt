@@ -1,0 +1,149 @@
+Desafio 1 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	float numero;
+	
+	printf("Digite um numero:");
+	scanf("%f", &numero);
+	
+	if (numero >= 0) {
+		printf("O numero e positivo.");
+	}
+	
+	else {
+		printf("O numero e negativo");
+	}
+	
+	return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------
+
+Desafio 2
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	int numero;
+	
+	printf("Digite um numero:");
+	scanf("%d", &numero);
+	
+	printf("\n O antecessor de %d = %d", numero, (numero - 1));
+	printf("\n O sucessor de %d = %d\n\n", numero, (numero + 1));
+	
+	return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------
+
+Desafio 3
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	int numero1, numero2, produto, soma;
+	
+	printf("Digite o primeiro numero:");
+	scanf("%d", &numero1);
+	
+	printf("\nDigite o segundo numero:");
+	scanf("%d", &numero2);
+	
+	produto = numero1 * numero2;
+	soma = numero1 + numero2;
+	
+	printf("\nO produto entre %d e %d e: %d", numero1, numero2, produto);
+	printf("\nA soma entre %d e %d e: %d", numero1, numero2, soma);
+	
+	return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------
+
+Desafio 4
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	float centimetros, polegadas, x;
+	
+	printf("Digite um numero em centimetros:");
+	scanf("%f", &centimetros);
+	
+	polegadas = 2.54;
+	x = centimetros / polegadas;
+	
+	printf("O numero %f em polegadas e de: %f", centimetros, x);
+	
+	return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------
+
+Desafio 5
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	float raio, area, pi;
+	
+	printf("Digite o raio de um circulo:");
+	scanf("%f", &raio);
+	
+	pi = 3.14;
+	area = pi * (raio * raio);
+	
+	printf("A area desse circulo e: %f", area);
+	
+	return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------
+
+Desafio 6
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	float raio, altura, area, volume, pi;
+	
+	printf("Digite um valor para a altura de um cilindro:");
+	scanf("%f", &altura);
+	
+	printf("Digite um valor pro raio do cilindro: ");
+	scanf("%f", &raio);
+	
+	pi = 3.14;
+	area = 2 * pi * raio * (altura + raio);
+	volume = pi * (raio * raio) * altura;
+	
+	printf("A area do cilindro e: %f", area);
+	printf("O volume do cilindro e: %f", volume);
+}
